@@ -140,3 +140,7 @@ The `closed_v2` files use genuinely different loop morphologies: 0° sharp recta
 ## Standard closed SOT curves
 
 The `standard` files use the canonical double-plateau, single-threshold-switching loop: an ascending branch switches from low to high near `+Ic`, and a descending branch switches from high to low near `−Ic`. The turn-around endpoints are exactly closed. Angle-dependent amplitudes, thresholds, and switching widths distinguish the five curves. These are model display curves, not raw measurements.
+
+## 0°–90° amplitude-normalized model version
+
+The `SOT_all_angles_norm_0_90.xlsx`/`.csv` files and `SOT_norm_0_90.png` provide a separate normalized model version for 0°–90°. A common scale factor of approximately 0.10568 is applied to the resistance deviations from each column's baseline, giving a maximum modeled flip amplitude of 0.09. The original wide table is untouched. These normalized files are not modified measurements and must not be reported as raw experimental values without a physical calibration basis.
