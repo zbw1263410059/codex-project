@@ -40,3 +40,17 @@ The following files contain both measured inputs and clearly labeled model-predi
 - `分析说明.txt`
 
 The ZIP archives are packaged copies of these result files. The original OPJU vertical-axis unit was not specified, so the resistance values are retained in the original numerical units.
+
+## Standardized 52-point angle files
+
+The following files were generated after using the uploaded `165度.xlsx` as a point-count and current-sequence template:
+
+- `SOT_0deg.xlsx`
+- `SOT_15deg.xlsx`
+- `SOT_30deg.xlsx`
+- `SOT_45deg.xlsx`
+- `SOT_60deg.xlsx`
+- `generated_angle_xlsx.zip`
+- `generated_angle_files_manifest.csv`
+
+Each workbook contains 52 numeric points in `Sheet1` (two 26-point branches) and an `说明` sheet. These five files are **model-generated standardized data, not raw measurements**. The 15°, 30°, and 60° angles had no source OPJU measurements in the uploaded archive; the 0° and 45° files were also re-generated to use the common 52-point sequence. The manifest records the model amplitudes and source status.
