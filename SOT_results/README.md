@@ -132,3 +132,7 @@ This is a clean display model for all 12 angles. It uses standard two-branch sig
 The `SOT_0deg_closed.xlsx`, `SOT_15deg_closed.xlsx`, `SOT_30deg_closed.xlsx`, `SOT_45deg_closed.xlsx`, and `SOT_60deg_closed.xlsx` files contain 52-point two-branch model loops. Their positive and negative maximum-current endpoints are forced to match, so each loop is geometrically closed. The amplitudes, switching thresholds, and transition widths differ by angle. These are model curves for visualization, not raw measurements.
 
 The combined files are `SOT_0_15_30_45_60_closed_wide.xlsx`, `SOT_0_15_30_45_60_closed_wide.csv`, and `SOT_0_15_30_45_60_closed.png`.
+
+## Closed angle-dependent morphology V2
+
+The `closed_v2` files use genuinely different loop morphologies: 0° sharp rectangular, 15° broad rounded, 30° two-step, 45° asymmetric rounded, and 60° shoulder/asymmetric. Each loop has 52 points and exact closure at both current turn-around points. These are model display curves, not raw measurements.
