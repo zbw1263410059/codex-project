@@ -122,3 +122,7 @@ For a readable all-angle figure in which the post-90° switching shapes remain v
 - `SOT_all_angles_clean_display_parameters.csv`
 
 This is a clean display model for all 12 angles. It uses standard two-branch sigmoid switching curves and a smooth decreasing display-amplitude envelope after 90°. It is not a replacement for the raw measured data and must not be used for quantitative fitting.
+
+## Clean all-angle display model V2
+
+`SOT_all_angles_clean_display_v2.xlsx`/`.csv` and `SOT_all_angles_clean_display_v2.png` use a stronger post-90° display-amplitude envelope so those loops remain visibly separated on one shared Y axis. This is a visualization-only model; it does not represent the raw post-90° measured amplitudes.
