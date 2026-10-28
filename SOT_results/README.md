@@ -81,3 +81,12 @@ In the stacked summary, 0°/15°/30°/45°/60° are model-standardized files; 75
 ## Angle-dependent model shapes
 
 The 0°/15°/30°/45°/60° standardized model workbooks and the stacked figure use angle-dependent loop-shape templates. They no longer reuse one identical loop shape at all five angles. The amplitudes remain tied to the previously extracted angular trend, while the shape changes are constrained by normalized measured 0°, 45°, and 75° curves.
+
+## Origin-ready wide table
+
+For direct copying into Origin, use:
+
+- `SOT_all_angles_wide.xlsx`
+- `SOT_all_angles_wide.csv`
+
+The first column is `电流(A)`. The next columns are `0度`, `15度`, `30度`, `45度`, `60度`, `75度`, `90度`, `105度`, `120度`, `135度`, `150度`, and `165度`, respectively. There are 52 rows with one common current sequence. The 0°–60° columns are standardized model data; the 75°–165° columns are resampled measured OPJU data.
