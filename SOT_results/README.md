@@ -111,3 +111,14 @@ For a figure where the 0° curve is centered near 10 and the 15° curve near 7, 
 - `SOT_all_angles_display_transform.csv`
 
 This display table shifts the angle baselines and applies a visual amplitude floor to the small 90°–165° loops so their switching shape remains visible. It is for plotting only. Do not use it for quantitative fitting; use `SOT_all_angles_wide.xlsx` instead.
+
+## Clean all-angle display model
+
+For a readable all-angle figure in which the post-90° switching shapes remain visible, use:
+
+- `SOT_all_angles_clean_display.xlsx`
+- `SOT_all_angles_clean_display.csv`
+- `SOT_all_angles_clean_display.png`
+- `SOT_all_angles_clean_display_parameters.csv`
+
+This is a clean display model for all 12 angles. It uses standard two-branch sigmoid switching curves and a smooth decreasing display-amplitude envelope after 90°. It is not a replacement for the raw measured data and must not be used for quantitative fitting.
