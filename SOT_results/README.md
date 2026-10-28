@@ -136,3 +136,7 @@ The combined files are `SOT_0_15_30_45_60_closed_wide.xlsx`, `SOT_0_15_30_45_60_
 ## Closed angle-dependent morphology V2
 
 The `closed_v2` files use genuinely different loop morphologies: 0° sharp rectangular, 15° broad rounded, 30° two-step, 45° asymmetric rounded, and 60° shoulder/asymmetric. Each loop has 52 points and exact closure at both current turn-around points. These are model display curves, not raw measurements.
+
+## Standard closed SOT curves
+
+The `standard` files use the canonical double-plateau, single-threshold-switching loop: an ascending branch switches from low to high near `+Ic`, and a descending branch switches from high to low near `−Ic`. The turn-around endpoints are exactly closed. Angle-dependent amplitudes, thresholds, and switching widths distinguish the five curves. These are model display curves, not raw measurements.
