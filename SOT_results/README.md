@@ -89,3 +89,14 @@ The curve form is:
 `R2(I) = Rlow + A·sigmoid((I+Ic)/w)`
 
 where `A` is the angle-dependent flip amplitude, `Ic` is the smooth angle-dependent switching threshold, and `w` is the narrow transition width.
+
+## Visualization-shifted wide table
+
+When plotting the raw wide table, the 90°–165° curves can overlap because their original baselines are close. For a clearer stacked display, use:
+
+- `SOT_all_angles_wide_shifted.xlsx`
+- `SOT_all_angles_wide_shifted.csv`
+- `SOT_all_angles_wide_shifted.png`
+- `SOT_all_angles_visual_offsets.csv`
+
+Only the 90°–165° columns receive angle-specific constant vertical offsets. The first column and all switching shapes are unchanged. These shifted values are for visualization only and must not be used for quantitative resistance, amplitude, or physical-parameter fitting; use `SOT_all_angles_wide.xlsx` for quantitative work.
