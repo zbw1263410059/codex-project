@@ -78,15 +78,14 @@ For comparison across all 12 angles:
 
 In the stacked summary, 0°/15°/30°/45°/60° are model-standardized files; 75°/90°/105°/120°/135°/150°/165° are measured OPJU resamples.
 
-## Angle-dependent model shapes
+## Clean standard model curves for 0°–60°
 
-The 0°/15°/30°/45°/60° standardized model workbooks and the stacked figure use angle-dependent loop-shape templates. They no longer reuse one identical loop shape at all five angles. The amplitudes remain tied to the previously extracted angular trend, while the shape changes are constrained by normalized measured 0°, 45°, and 75° curves.
+The 0°/15°/30°/45°/60° model workbooks use a deterministic two-branch SOT switching model rather than noisy measured-template interpolation. Branch 1 switches from the low plateau to the high plateau near `+Ic`; branch 2 switches from high to low near `−Ic`. The amplitude follows the previously selected angular trend, while `Ic` varies smoothly with angle. No random noise or endpoint fluctuations are added. These five files remain model predictions, not raw measurements.
 
-## Origin-ready wide table
+The curve form is:
 
-For direct copying into Origin, use:
+`R1(I) = Rlow + A·sigmoid((I−Ic)/w)`
 
-- `SOT_all_angles_wide.xlsx`
-- `SOT_all_angles_wide.csv`
+`R2(I) = Rlow + A·sigmoid((I+Ic)/w)`
 
-The first column is `电流(A)`. The next columns are `0度`, `15度`, `30度`, `45度`, `60度`, `75度`, `90度`, `105度`, `120度`, `135度`, `150度`, and `165度`, respectively. There are 52 rows with one common current sequence. The 0°–60° columns are standardized model data; the 75°–165° columns are resampled measured OPJU data.
+where `A` is the angle-dependent flip amplitude, `Ic` is the smooth angle-dependent switching threshold, and `w` is the narrow transition width.
