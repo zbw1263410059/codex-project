@@ -54,3 +54,26 @@ The following files were generated after using the uploaded `165度.xlsx` as a p
 - `generated_angle_files_manifest.csv`
 
 Each workbook contains 52 numeric points in `Sheet1` (two 26-point branches) and an `说明` sheet. These five files are **model-generated standardized data, not raw measurements**. The 15°, 30°, and 60° angles had no source OPJU measurements in the uploaded archive; the 0° and 45° files were also re-generated to use the common 52-point sequence. The manifest records the model amplitudes and source status.
+
+## Remaining measured angles and stacked summary
+
+The standardized measured-angle workbooks are:
+
+- `SOT_75deg.xlsx`
+- `SOT_90deg.xlsx`
+- `SOT_105deg.xlsx`
+- `SOT_120deg.xlsx`
+- `SOT_135deg.xlsx`
+- `SOT_150deg.xlsx`
+- `SOT_165deg.xlsx`
+
+They use the OPJU curves from the uploaded archive and interpolate each selected measured loop to the common 52-point current sequence. They remain labeled as measured resamples, not new measurements.
+
+For comparison across all 12 angles:
+
+- `SOT_all_angles_52point.xlsx` contains one sheet per angle plus a manifest.
+- `SOT_all_angles_52point_long.csv` is a long-form table for plotting.
+- `SOT_all_angles_stacked.png` is the stacked comparison figure.
+- `all_angles_52point_manifest.csv` records the source status and point count.
+
+In the stacked summary, 0°/15°/30°/45°/60° are model-standardized files; 75°/90°/105°/120°/135°/150°/165° are measured OPJU resamples.
