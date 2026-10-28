@@ -26,7 +26,7 @@ The archive contains no OPJU data for 15°, 30°, or 60°. These files are model
 - `missing_angles_model_curves.png`
 - `缺失角度_模型预测回线.png`
 
-The predicted curves use the measured 45° curve shape as a deterministic template and scale it with the selected angular-amplitude model. No random measurement noise was added.
+The predicted amplitudes retain the selected angular-amplitude model. Their curve shapes are angle-dependent: the normalized measured 0°, 45°, and 75° loop shapes are blended by angle (0°→45° for 15°/30°; 45°→75° for 60°), so the model curves are distinct while remaining smoothly related. No random measurement noise was added.
 
 ### Mixed analysis files
 
@@ -77,3 +77,7 @@ For comparison across all 12 angles:
 - `all_angles_52point_manifest.csv` records the source status and point count.
 
 In the stacked summary, 0°/15°/30°/45°/60° are model-standardized files; 75°/90°/105°/120°/135°/150°/165° are measured OPJU resamples.
+
+## Angle-dependent model shapes
+
+The 0°/15°/30°/45°/60° standardized model workbooks and the stacked figure use angle-dependent loop-shape templates. They no longer reuse one identical loop shape at all five angles. The amplitudes remain tied to the previously extracted angular trend, while the shape changes are constrained by normalized measured 0°, 45°, and 75° curves.
