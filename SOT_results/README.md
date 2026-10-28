@@ -100,3 +100,14 @@ When plotting the raw wide table, the 90°–165° curves can overlap because th
 - `SOT_all_angles_visual_offsets.csv`
 
 Only the 90°–165° columns receive angle-specific constant vertical offsets. The first column and all switching shapes are unchanged. These shifted values are for visualization only and must not be used for quantitative resistance, amplitude, or physical-parameter fitting; use `SOT_all_angles_wide.xlsx` for quantitative work.
+
+## Display-normalized wide table
+
+For a figure where the 0° curve is centered near 10 and the 15° curve near 7, use:
+
+- `SOT_all_angles_wide_display.xlsx`
+- `SOT_all_angles_wide_display.csv`
+- `SOT_all_angles_display.png`
+- `SOT_all_angles_display_transform.csv`
+
+This display table shifts the angle baselines and applies a visual amplitude floor to the small 90°–165° loops so their switching shape remains visible. It is for plotting only. Do not use it for quantitative fitting; use `SOT_all_angles_wide.xlsx` instead.
